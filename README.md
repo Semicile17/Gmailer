@@ -105,4 +105,3 @@ Report any issues or feature requests on the [GitHub Issues](https://github.com/
 - Provided a detailed example of using the library functions within an `async` IIFE.
 - Ensured the `try...catch` block is included to handle potential errors.
 
-Once you have this `README.md` in your repository, it will serve as a comprehensive guide for users of your library.
