@@ -1,0 +1,32 @@
+{
+  "name": "gmailer_by_semicile",
+  "version": "1.0.0",
+  "description": "A custom Node.js library for sending emails via Gmail.",
+  "main": "mail.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Semicile17/Gmailer.git"
+  },
+  "keywords": [
+    "node",
+    "gmail",
+    "email",
+    "library"
+  ],
+  "author": "Rohit Mahant <Rohitmahant010@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Semicile17/Gmailer/issues"
+  },
+  "homepage": "https://github.com/Semicile17/Gmailer#readme",
+  "dependencies": {
+    "nodemailer": "^6.9.14",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
