@@ -1,6 +1,6 @@
+Here is the updated `README.md` file with the corrected usage example:
 
-
-
+```markdown
 # Gmailer
 
 A Node.js library for sending emails via Gmail. Supports sending single emails, multiple emails, and emails from Excel sheets.
@@ -25,15 +25,25 @@ npm install gmailer_by_semicile
 ```javascript
 const emailLibrary = require('gmailer_by_semicile');
 
-// Send a single email
-emailLibrary.sendSingleMail('your-email@gmail.com', 'your-app-password', 'recipient@example.com', 'Test Subject', 'Test Body');
+(async () => {
+  try {
+    // Send a single email
+    const singleMailResult = await emailLibrary.sendSingleMail('your-email@gmail.com', 'your-app-password', 'recipient@example.com', 'Test Subject', 'Test Body');
+    console.log('Single Mail Result:', singleMailResult);
 
-// Send multiple emails
-const recipients = ['recipient1@example.com', 'recipient2@example.com'];
-emailLibrary.sendMultipleMails('your-email@gmail.com', 'your-app-password', recipients, 'Test Subject', 'Test Body');
+    // Send multiple emails
+    const recipients = ['recipient1@example.com', 'recipient2@example.com'];
+    const multipleMailsResult = await emailLibrary.sendMultipleMails('your-email@gmail.com', 'your-app-password', recipients, 'Test Subject', 'Test Body');
+    console.log('Multiple Mails Result:', multipleMailsResult);
 
-// Send emails from an Excel file
-emailLibrary.sendExcelMails('your-email@gmail.com', 'your-app-password', 'path/to/your/excel/file.xlsx', 'Test Subject', 'Test Body');
+    // Send emails from an Excel file
+    const filePath = 'path/to/your/excel/file.xlsx';
+    const excelMailsResult = await emailLibrary.sendExcelMails(filePath, 'your-email@gmail.com', 'your-app-password', 'Test Subject', 'Test Body');
+    console.log('Excel Mails Result:', excelMailsResult);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+})();
 ```
 
 ## API
@@ -65,13 +75,13 @@ Send multiple emails using Gmail.
 - `subject` (string): Email subject.
 - `text` (string): Email body text.
 
-### `sendExcelMails(userEmail, appPassword, filePath, subject, text)`
+### `sendExcelMails(filePath, userEmail, appPassword, subject, text)`
 
 Send emails to recipients listed in an Excel file using Gmail.
 
+- `filePath` (string): Path to the Excel file containing recipient email addresses.
 - `userEmail` (string): Your Gmail email address.
 - `appPassword` (string): Your Gmail app password.
-- `filePath` (string): Path to the Excel file containing recipient email addresses.
 - `subject` (string): Email subject.
 - `text` (string): Email body text.
 
@@ -90,7 +100,12 @@ Report any issues or feature requests on the [GitHub Issues](https://github.com/
 ## Author
 
 - Your Name
-- GitHub: [github.com/Semicile17](https://github.com/Gmailer)
+- GitHub: [github.com/Semicile17](https://github.com/Semicile17)
 ```
 
-Replace placeholders (`your-library-name`, `your-email@gmail.com`, etc.) with actual values relevant to your library. This Markdown file structure provides a clear and organized way to present your library's features, usage examples, API documentation, licensing information, and guidelines for contributing and reporting issues. Adjust and customize it as per your specific library requirements and preferences.
+### Adjustments Made:
+- The usage example now correctly utilizes `async`/`await` for asynchronous function calls.
+- Provided a detailed example of using the library functions within an `async` IIFE.
+- Ensured the `try...catch` block is included to handle potential errors.
+
+Once you have this `README.md` in your repository, it will serve as a comprehensive guide for users of your library.
