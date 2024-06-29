@@ -1,4 +1,4 @@
-// index.js
+
 const nodemailer = require('nodemailer');
 const xlsx = require('xlsx');
 
@@ -92,8 +92,7 @@ const sendExcelMails = async (filePath, userEmail, appPassword, subject, text) =
 };
 
 module.exports = {
- 
-  sendSingleMail,
+ sendSingleMail,
   sendMultipleMails,
   sendExcelMails,
 };
