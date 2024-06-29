@@ -98,7 +98,7 @@ Report any issues or feature requests on the [GitHub Issues](https://github.com/
 
 ## Author
 
-- Your Name
+- Rohit Mahant 
 - GitHub: [github.com/Semicile17](https://github.com/Semicile17)
 ```
 
