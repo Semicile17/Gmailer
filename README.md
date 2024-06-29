@@ -99,11 +99,5 @@ Report any issues or feature requests on the [GitHub Issues](https://github.com/
 ## Author
 
 - Rohit Mahant 
-- GitHub: [github.com/Semicile17](https://github.com/Semicile17)
-```
-
-### Adjustments Made:
-- The usage example now correctly utilizes `async`/`await` for asynchronous function calls.
-- Provided a detailed example of using the library functions within an `async` IIFE.
-- Ensured the `try...catch` block is included to handle potential errors.
+- GitHub: [github.com/Semicile17](https://github.com/Semicile17/Gmailer) 
 
