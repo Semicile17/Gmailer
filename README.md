@@ -1,6 +1,6 @@
 # Gmailer
 
-![Gmailer Logo](logo.png =100x)
+<img src="logo.png" alt="Gmailer Logo" width="200px" />
 
 A Node.js library for sending emails via Gmail. Supports sending single emails, multiple emails, and emails from Excel sheets.
 
