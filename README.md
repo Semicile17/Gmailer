@@ -1,6 +1,6 @@
 # Gmailer
 
-![alt text](<Art Nuvo Letterpress.png>)
+![alt text](<logo.png>)
 
 A Node.js library for sending emails via Gmail. Supports sending single emails, multiple emails, and emails from Excel sheets.
 
