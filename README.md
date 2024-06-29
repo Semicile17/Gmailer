@@ -1,6 +1,6 @@
 Here is the updated `README.md` file with the corrected usage example:
 
-```markdown
+
 # Gmailer
 
 A Node.js library for sending emails via Gmail. Supports sending single emails, multiple emails, and emails from Excel sheets.
