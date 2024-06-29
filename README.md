@@ -35,7 +35,7 @@ const emailLibrary = require('gmailer_by_semicile');
     const multipleMailsResult = await emailLibrary.sendMultipleMails('your-email@gmail.com', 'your-app-password', recipients, 'Test Subject', 'Test Body');
     console.log('Multiple Mails Result:', multipleMailsResult);
 
-    // Send emails from an Excel file
+    // Send emails from an Excel file . The file must contain a column 'email'
     const filePath = 'path/to/your/excel/file.xlsx';
     const excelMailsResult = await emailLibrary.sendExcelMails(filePath, 'your-email@gmail.com', 'your-app-password', 'Test Subject', 'Test Body');
     console.log('Excel Mails Result:', excelMailsResult);
